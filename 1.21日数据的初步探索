@@ -1,0 +1,18 @@
+首先我是根据基础表的测试集合训练集进行数据的初步探索，剩下的几个大类的信息我想之后过几天看看。contest_basic这一大类的数据根据题目的描述看起来像一个二分类问题
+，也就是logistic回归，这只是我一打眼上来的第一感官，但是更准确的模型是要依靠其他大类的数据的，也可能会删掉很多的数据。
+先给大家看看，我的初步分析
+RangeIndex: 30000 entries, 0 to 29999
+Data columns (total 11 columns):
+REPORT_ID        30000 non-null int64
+ID_CARD          30000 non-null object
+LOAN_DATE        30000 non-null object
+AGENT            8952 non-null object
+IS_LOCAL         30000 non-null object
+WORK_PROVINCE    27742 non-null float64
+EDU_LEVEL        26942 non-null object
+MARRY_STATUS     30000 non-null object
+SALARY           8864 non-null float64
+HAS_FUND         29998 non-null float64
+Y                30000 non-null int64
+dtypes: float64(3), int64(2), object(6)
+数据的基本情况是30000个数据中，客户渠道和收入确实较多，就目前而言我倾向于先去除这两项，其他的缺失项

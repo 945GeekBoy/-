@@ -20,5 +20,5 @@ dtypes: float64(3), int64(2), object(6)
 REPORT_ID这一项是关联其他大类的数据的，现在我把它放到一边，身份证号可以完全是没用的，这个可以最后在考虑
 WORK_PROVINCE这个属性有点搞不懂，数值上有100000规模，但搞不懂它的意思。
 
-现在就算logistic回归，LOAN_DATE就算要用也要离散化，但是也不能太散；IS_LOCAL这项可以用；WORK_PROVINCE也要离散化之后才可以使用；EDU_LEVEL可用
+现在就算logistic回归，LOAN_DATE就算要用也要离散化，但是也不能太散，这个不能用，违约与日期没太大关系；IS_LOCAL这项可以用；WORK_PROVINCE也要离散化之后才可以使用；EDU_LEVEL可用
 MARRY_STATUS 和HAS_FUND 也可以用（剩下没说的就很难用了）

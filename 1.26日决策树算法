@@ -1,0 +1,9 @@
+采用的是决策树算法，用到的变量是
+IS_LOCAL         30000 non-null float64
+WORK_PROVINCE    30000 non-null object
+EDU_LEVEL        30000 non-null float64
+MARRY_STATUS     30000 non-null float64
+HAS_FUND         30000 non-null float64
+那些缺失的我都填上了，并且转化了数据类型
+收入还有办理的方式缺失太多我省略了，但是感觉这个会有用的
+在训练样本中它准确度是100%，哈哈哈太高了又这么简单，一般是有问题的。
